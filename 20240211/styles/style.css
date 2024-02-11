@@ -1,0 +1,12 @@
+/* 
+Author: Eduardo Naranjo
+Date:   Feb 11 2024
+My first CSS file  */
+
+/* Paragraphs with class="green" */
+p.green { color: green; }
+
+.container {
+    width: 1000px;
+    margin:auto;
+}
