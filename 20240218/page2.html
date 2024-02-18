@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            font-family: arial, helvetica, sans-serif;
+        }
+
+        a.nodec {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        li em {
+            /* em inside another li */
+            font-weight: bold;
+        }
+
+        h1,
+        em {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ul ul {
+            /* ul inside another ul */
+            font-size: .8em;
+        }
+    </style>
+
+    <style type="text/css">
+        div {
+            background-color: #aaccff;
+            margin-bottom: .5em;
+            font-family: arial, helvetica, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Shopping list for Monday:</h1>
+    <ul>
+        <li>Milk</li>
+        <li>Bread
+            <ul>
+                <li>White bread</li>
+                <li>Rye bread</li>
+                <li>Whole wheat bread</li>
+            </ul>
+        </li>
+        <li>Rice</li>
+        <li>Potatoes</li>
+        <li>Pizza <em>with mushrooms</em></li>
+    </ul>
+    <p><em>Go to the</em>
+        <a class="nodec" href="http://www.store.com">
+            Grocery store</a>
+    </p>
+
+    <div style="width: 20%">Here is some
+        text that goes in a box which is
+        set to stretch across twenty percent
+        of the width of the screen.</div>
+    <div style="width: 80%; text-align: center">
+        Here is some CENTERED text that goes in a box
+        which is set to stretch across eighty percent of
+        the width of the screen.</div>
+    <div style="width: 20%; height: 150px; overflow: scroll">
+        This box is only twenty percent of
+        the width and has a fixed height.
+        What do we do if it overflows? Set the
+        overflow property to scroll! This box is only twenty percent of
+        the width and has a fixed height.
+        What do we do if it overflows? Set the
+        overflow property to scroll!</div>
+
+        <h3>div together</h3>
+
+        <div style="width: 20%; float: left;">Here is some
+            text that goes in a box which is
+            set to stretch across twenty percent
+            of the width of the screen.</div>
+        <div style="width: 80%; text-align: center; float: right;">
+            Here is some CENTERED text that goes in a box
+            which is set to stretch across eighty percent of
+            the width of the screen.</div>
+
+
+</body>
+
+</html>

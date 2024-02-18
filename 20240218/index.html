@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+
+    <h1>HTML Forms</h1>
+
+    <h3>Regular Form</h3>
+
+    <form method="get">
+        First Name: <input type="text" name="fn" id="fn">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip">
+        <br>
+        <input type="submit" value="Submit...">
+    </form>
+
+    <h3>Method POST</h3>
+
+    <form method="post">
+        First Name: <input type="text" name="fn" id="fn">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip">
+        <br>
+        Password: <input type="password" name="pwd" id="pwd">
+        <br>
+        <input type="submit" value="Submit...">
+    </form>
+
+    <h3>Predefined values</h3>
+
+    <form method="post">
+        First Name: <input type="text" name="fn" id="fn" value="Mickey">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln" value="Mouse">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip" value="10001">
+        <br>
+        Password: <input type="password" name="pwd" id="pwd" value="pwd123">
+        <br>
+        <input type="submit" value="Submit...">
+    </form>
+
+    <h3>Placeholder</h3>
+
+    <form method="post">
+        First Name: <input type="text" name="fn" id="fn" placeholder="First Name">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln" placeholder="Last Name">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip" placeholder="Enter Zip Code">
+        <br>
+        Password: <input type="password" name="pwd" id="pwd">
+        <br>
+        <input type="submit" value="Submit...">
+    </form>
+
+    <h3>input type button</h3>
+
+    <form method="get">
+        First Name: <input type="text" name="fn" id="fn">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip">
+        <br>
+        <input type="button" value="Submit..." onclick="alert('You clicked a button!');">
+    </form>
+
+    <h3>Using button element</h3>
+
+    <form method="get">
+        First Name: <input type="text" name="fn" id="fn">
+        <br>
+        Last Name: <input type="text" name="ln" id="ln">
+        <br>
+        Zip Code: <input type="text" name="zip" id="zip">
+        <br>
+        <button>Click Me!</button>
+    </form>
+
+<h3>Form inside a table</h3>
+
+    <form>
+        <table>
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fn" id="fn"></td>
+            </tr>
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="ln" id="ln"></td>
+            </tr>
+            <tr>
+                <td>Zip Code</td>
+                <td><input type="text" name="zip" id="zip"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" value="Submit..." onclick="alert('You clicked a button!');"></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
