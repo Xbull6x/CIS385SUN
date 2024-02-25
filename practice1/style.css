@@ -1,0 +1,20 @@
+/*
+Author: Eduardo Naranjo
+Description: Removed inline css to external file
+*/
+
+.txtCenter {
+    text-align: center;
+}
+
+#title {
+    color: white;
+    background-color: black;
+    border: solid black 2px;
+    outline: solid black 2px;
+}
+
+.input1 {
+    background-color: #DEDEE6;
+    border: 4px solid black;
+}
