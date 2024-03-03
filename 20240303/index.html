@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eduardo Naranjo">
+    <meta name="description" content="JavaScript and Forms">
+    <title>JS and Forms</title>
+</head>
+
+<body>
+
+    <h3>Adding two numbers</h3>
+
+    <table>
+        <tr>
+            <td>Number 1</td>
+            <td>
+                <input type="number" name="number1" id="number1">
+            </td>
+        </tr>
+        <tr>
+            <td>Number 2</td>
+            <td>
+                <input type="number" name="number2" id="number2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="text" name="result2" id="result2">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Add Numbers" onclick="addNumbers()">
+            </td>
+        </tr>
+    </table>
+
+    <p id="result1">Result will show here.</p>
+
+    <h3>Form 2 to get User's Name</h3>
+
+    <table>
+        <tr>
+            <td>Enter your name</td>
+            <td>
+                <input type="text" name="user_name" id="user_name">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="button" value="Save Name" onclick="saveName()">
+            </td>
+        </tr>
+    </table>
+
+    <p id="user_greeting"></p>
+
+    <script>
+
+        function addNumbers() {
+            console.log("Inside addNumbers() function.");
+
+            // 2. Get numbers from user
+            var num1 = Number(document.getElementById("number1").value);
+            console.log("Number 1 = " + num1);
+
+            var num2 = Number(document.getElementById("number2").value);
+            console.log("Number 2 = " + num2);
+
+            // 3. Add numbers
+            console.log("Addition = " + (num1 + num2));
+
+            // 4. Show Result
+            // 4.1
+            document.getElementById("result1").innerHTML = 
+            "Addition = " + (num1 + num2);
+
+            // 4.2
+            //alert("Addition = " + (num1 + num2));
+
+            // 4.3
+            document.getElementById("result2").value = (num1 + num2)
+        }
+
+        function saveName(){
+            // Get the user's name
+            var user_name = document.getElementById("user_name").value;
+
+            // Show user's name on page
+            document.getElementById("user_greeting").innerHTML = 
+            "Hello " + user_name + "!";
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
