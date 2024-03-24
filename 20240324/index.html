@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">WebSiteName</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <div id="store"></div>
+
+    <table border="1">
+        <tbody id="tbl1"></tbody>
+    </table>
+
+
+    <script>
+        window.onload = function () {
+            console.log("Page loaded!");
+
+            var items = [
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "fruit", name: "orange", color: "orange", image: "tv1.jpeg" },
+                { type: "fruit", name: "apple", color: "red", image: "tv2.jpeg" },
+                { type: "vegetable", name: "celery", color: "green", image: "tv3.jpeg" },
+                { type: "123", name: "TV1", color: "100", image: "tv4.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" },
+                { type: "xyz", name: "TV2", color: "200", image: "tv5.jpeg" }
+            ];
+
+            //var table_body = "";
+
+            // For loop for a table -don't use it on our project!--
+            for (var i = 0; i < items.length; i++) {
+                var table_row = "<tr>";
+                var this_item = items[i];
+                table_row += "<td>" + this_item.type + "</td>" +
+                    "<td>" + this_item.name + "</td><td>" +
+                    this_item.color + "</td>" +
+                    "<td><img src='images/" + this_item.image + "' alt='Product'></td>";
+                table_row += "</tr>";
+                document.getElementById("tbl1").innerHTML += table_row;
+            }
+
+            // For loop for  panel
+            for (var i = 0; i < items.length; i++) {
+                var panel = "<div class=\"panel panel-primary\">";
+                var this_item = items[i];
+                panel += "<div class=\"panel-heading\">" + this_item.type + "</div>" +
+                    "<div class=\"panel-body\">" + this_item.name + "<br>" +
+                    "Color: " + this_item.color + "<br>" +
+                    "<br><img src='images/" + this_item.image + "' alt='Product'>";
+                panel += "</div>";// close panel body
+                panel += "</div>";// close panel
+                document.getElementById("store").innerHTML += panel;
+            }
+
+        };
+    </script>
+
+    <img src="images/tv1.jpeg" alt="TV1">
+
+</body>
+
+</html>

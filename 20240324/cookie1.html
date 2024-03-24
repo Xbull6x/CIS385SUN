@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie</title>
+    <script>
+        function setCookie() {
+            var name = "Name1:" + document.getElementById("user").value;
+            document.cookie = escape(name);
+            document.getElementById("user").value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Page for Setting a Cookie</h1>
+    Enter name: <input type="text" id="user">
+    <input type="button" onClick="setCookie();" value="Save Name">
+    <br><br>
+    Then click here to see an example of
+    <a href="cookiePage2.html">the cookie being read</a>
+</body>
+
+</html>
